@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML 배우기2</title>
+</head>
+<body>
+    <!-- 단축키는 ctrl+/ -->
+    <!-- 
+        <태그> 컨텐츠 </태그>
+        <태그 /> 혹은 <태그>
+        <태그 속성="값">컨텐츠 </태그>
+        <태그 속성="값">
+        <태그 속성="값" />
+     -->
+    <h1>두번째 문서</h1>
+    <h2>Heading2</h2>
+    <!-- 태그1+태그2 -->
+    <!-- 태그{내용} -->
+    <!-- hr+h3{세번째제목}+hr -->
+    <hr>
+    <h3>세번째제목</h3>
+    <hr>
+    <!-- p 문단, br 줄바꿈 -->
+    <p>
+        문단 <br>
+        문단 <br /><br /><br />
+        문단
+    </p>
+    <!--
+        * 반복횟수
+        $ 자동증감 -->
+    <!-- p{문단$입니다}*3 -->
+    <p>문단1입니다</p>
+    <p>문단2입니다</p>
+    <p>문단3입니다</p>  
+    <hr>
+    <!-- address{주소입니다}+blockquote{인용문}   -->
+    <address>주소입니다</address>
+    <blockquote>인용문</blockquote>  
+    <hr>
+    <!-- 
+        인라인요소 
+          : i, em, b, strong, img, a, input, textarea ...
+     -->
+    <p>
+        <b>진하게</b>
+        <strong>진하게</strong> 
+        <br>
+        <em>기울임꼴</em>
+        <i>기울임꼴</i>
+    </p>
+    <hr>
+    <!-- 하이퍼링크 
+        <a href="URL" title="툴팁제목" target="_blank">
+            콘텐츠
+        </a>
+    -->
+    <a href="http://naver.com">Naver로 이동하기</a>
+    <br>
+    <!-- a:blank -->
+    <a href="http://google.com" target="_blank" 
+        title="클릭시 구글로 이동한다">구글</a>
+    <!-- # 가상하이퍼링크 -->
+    <!-- 
+        부모요소>자식요소  ... 태그1>태그2 
+        태그[속성1=값1 속성2=값2]
+        태그{내용}
+    -->
+    <!-- (p>a[href=# title=툴팁$]{메뉴$})*3 -->
+    <p><a href="#" title="툴팁1">메뉴1</a></p>
+    <p><a href="#" title="툴팁2">메뉴2</a></p>
+    <p><a href="#" title="툴팁3">메뉴3</a></p>
+    <hr>
+    <h2>순서없는 목록문단</h2>
+    <!-- 행 복제 alt+shift+하단방향키 -->
+    <ul>
+        <li>사과</li>
+        <li>사과</li>
+        <li>사과</li>
+        <li>사과</li>
+    </ul>
+    <!-- h2{순서 목록 문단}+(ol>li{목록$}*5) -->
+    <h2>순서 목록 문단</h2>
+    <ol>
+        <li>목록1</li>
+        <li>목록2</li>
+        <li>목록3</li>
+        <li>목록4</li>
+        <li>목록5</li>
+    </ol>
+    <hr>
+    <!-- 트리구조 : 순서없는목록문단 안에 순서있는목록 -->
+    <ul>
+        <li>web
+            <ol>
+                <li>HTML
+                    <ul>
+                        <li>블록 요소</li>
+                        <li>인라인 요소</li>
+                    </ul>
+                </li>
+                <li>CSS</li>
+                <li>JS</li>
+            </ol>
+        </li>
+        <li>db
+            <ul>
+                <li>오라클</li>
+                <li>MySQL</li>
+            </ul>
+        </li>
+        <li>java</li>
+    </ul>
+    <hr>
+    <!-- ul>(li>a[href=# target=_blank]{메뉴$})*5 -->
+    <ul>
+        <li><a href="#" target="_blank">메뉴1</a></li>
+        <li><a href="#" target="_blank">메뉴2</a></li>
+        <li><a href="#" target="_blank">메뉴3</a></li>
+        <li><a href="#" target="_blank">메뉴4</a></li>
+        <li><a href="#" target="_blank">메뉴5</a></li>
+    </ul>
+    <hr>
+    <!-- dl>(dt+dd) -->
+    <!-- dl>(dt{제목}+dd{내용}) -->
+    <dl>
+        <dt>제목</dt>
+        <dd>내용</dd>
+    </dl>
+    <hr>
+    <!-- dl>(dt{제목}+dd{내용$}*5) -->
+    <dl>
+        <dt>제목</dt>
+        <dd>내용1</dd>
+        <dd>내용2</dd>
+        <dd>내용3</dd>
+        <dd>내용4</dd>
+        <dd>내용5</dd>
+    </dl>
+
+</body>
+</html>

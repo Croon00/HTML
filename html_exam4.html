@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>네번째 문서</title>
+</head>
+<body>
+    <h1>폼문서</h1>
+    <hr>
+    <h2>폼1</h2>
+    <form action="success.html">
+        <p>
+            <!-- label의 for 값이 input의 id 값과 같아야한다 -->
+            <label for="text1">제목</label>
+            <input type="text" id="text1">
+        </p>
+        <!-- p>(label{암호}+input:password) -->
+        <p>
+            <label for="pwd">암호</label>
+            <input type="password" name="" id="pwd" />
+        </p>
+        <!-- 라디오버튼 : name값이 같아야한다.  -->
+        <p>
+            <strong>성별</strong><br>
+            <label for="male">남자</label>
+            <input type="radio" id="male" name="gender" checked>
+            <label for="female">여자</label>
+            <input type="radio" id="female" name="gender">
+        </p>
+        <!-- 체크박스 -->
+        <p>
+            <strong>취미</strong><br>
+            <!-- (label{아이템$}+input:checkbox)*4 -->
+            <label for="ch1">아이템1</label>
+            <input type="checkbox" name="" id="ch1" checked>
+            <label for="ch2">아이템2</label>
+            <input type="checkbox" name="" id="ch2">
+            <label for="ch3">아이템3</label>
+            <input type="checkbox" name="" id="ch3">
+            <label for="ch4">아이템4</label>
+            <input type="checkbox" name="" id="ch4">
+        </p>
+        <!-- 파일 첨부상자 -->
+        <!-- p>(label{첨부파일}+input:file) -->
+        <p><label for="filebox">첨부파일</label>
+            <input type="file" name="" id="filebox"></p>
+        <!-- 폼버튼 : reset, submit -->
+        <!-- p>(input:reset+input:submit) -->
+        <p>
+            <input type="reset" value="초기화">
+            <!-- 전송버튼 -->
+            <input type="submit" value="전송1">
+            <button>전송2</button>
+        </p>
+        <hr>
+        <!-- p>(label{내용}+textarea) -->
+        <p>
+            <label for="contents">내용</label>
+            <br>
+            <textarea name="" id="contents" cols="30" rows="3"></textarea>
+        </p>
+
+    </form>
+    <hr>
+    <h2>폼2</h2>
+    <form action="#">
+        <p>
+            <strong>직업</strong>
+            <select name="" id="">
+                <option>===== 선택하세요 =====</option>
+                <option value="학생">학생</option>
+                <option value="회사원">회사원</option>
+                <option value="자영업">자영업</option>
+                <option value="공무원">공무원</option>
+                <option value="기타">기타</option>
+            </select>
+        </p>
+        <hr>
+        <!-- fieldset>(legend{타이틀}+input) -->
+        <fieldset>
+            <legend>타이틀</legend>
+            <input type="text">
+        </fieldset>
+        <hr>
+        <p>
+            <strong>예약</strong><br>
+            <!-- label[for=r1]{날짜}+input:date#r1 -->
+            <label for="r1">날짜</label>
+            <input type="date" name="" id="r1">
+            <label for="r2">시간</label>
+            <input type="time" name="" id="r2">
+        </p>
+        <hr>
+        <p>
+            <!-- label[for=userEmail]{이메일}+input:email#userEmail -->
+            <label for="userEmail">이메일</label>
+            <input type="email" name="" id="userEmail">
+        </p>
+        <hr>
+        <p>
+            <label for="userUrl">URL</label>
+            <input type="url" name="" id="userUrl">
+        </p>
+        <hr>
+        <!-- fieldset>(legend{검색창}+label[for=search]{검색}+input:search#search) -->
+        <fieldset>
+            <legend>검색창</legend>
+            <label for="search">검색</label>
+            <input type="search" name="" id="search">
+        </fieldset>
+        <hr>
+        <p>
+            <!-- label[for=color]{색상 선택}+input:color#color -->
+            <label for="color">색상 선택</label>
+            <input type="color" name="" id="color">
+        </p>
+        <p>
+            <input type="reset" value="취소">
+            <input type="submit" value="전송">
+        </p>
+
+    </form>
+
+    
+</body>
+</html>

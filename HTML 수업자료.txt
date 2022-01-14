@@ -1,0 +1,569 @@
+
+------------------------------
+에디터 종류 
+- GUI 전용 : 드림위버, 나모웹에디터 
+- 하드코딩 전용 : 에디터플러스, 서브라임텍스트, 아톰, Vscode ...
+------------------------------
+수업을 위한 환경 설정 
+-----------------------------
+1. 프로그램 다운로드 : vscode
+ https://code.visualstudio.com
+상단 오른쪽 다운로드 
+Windows에서 64비트
+
+계속 클릭하셔서 설치하시면 됩니다.
+
+2. 크롬웹브라우저 설치 확인 
+
+3. 공유자료실 안내 
+작업폴더 생성(예:jumal)하신 후 
+작업폴더안에 자료 받으세요. 아래 주소 참조 
+
+http://
+비밀번호 : 
+
+-------------------------------------
+[ VScode 환경설정 ]
+// 작업폴더 추가하기 
+1) [FIle]-[Add folder to workspace]
+2) 작업폴더 선택 
+   [Add] 버튼 클릭 
+3) [Ctrl]+[B] 사이드바 열기 (사이드바에서 첫번째 아이콘 클릭) 
+작업 폴더 확인 
+
+// 테마설정
+[File]-[Preferences]-[Color Theme] 
+ 테마목록중 하나 선택 
+
+// HTML 버전 
+- 웹페이지의 컨텐츠(이미지, 텍스트, 하이퍼링크, 테이블...)의 제작언어 
+- HTML 4
+- XHTML 
+- HTML 5
+
+
+// html5 문서 만들기 
+1) File - New 
+   Ctrl + N 
+2) 파일 종류는 꼭 html로 지정 
+  파일이름 지정 후  
+  [Ctrl]+[S] 
+3) html 기본 구조 만들기 
+   html 입력후 
+   코딩완성목록에서 html:5를 선택 
+4) 내용 입력 
+5) 결과확인하기 
+크롬웹브라우저에서 [Ctrl]+[O] 파일열기 
+작성한 html 문서를 선택한다. 
+
+
+// 에디터창 화면 확대와 축소 
+  [Ctrl]+[+]  / Ctrl+[-]
+
+// 크롬웹브라우저랑 vscode 연결하기 
+1) [Extensions] 선택 후 
+2) coderfee 검색  
+3) open-in-browser 클릭수 [Install]
+4) 웹브라우저 연결 단축키는?
+   [Ctrl]+[ALt]+[O]
+   
+
+
+// html 태그의 종류 1
+- 단독태그
+  닫는 태그가 없다 
+   <hr />
+   <hr>
+- 태그 
+   닫는 태그가 있다.
+   <태그이름> ~ </태그이름>
+
+
+// html 태그의 종류 2
+- 블록요소 : 다음줄에 내용이 표시 
+   h1~h6, div, p, ul, li
+- 인라인요소 : 같은줄에 내용이 표시 
+  span, img, strong, a
+
+// 제목관련 태그 heading 태그 
+h1~h6 : 
+<h숫자> 글내용 </h숫자>
+숫자는 1~6 
+숫자가 작을수록 글자가 커지게 표현된다. 
+블록요소 
+하단에 자동으로 공백 표시 
+
+// Emmet 코딩이란?
+  축약어를 이용하여 코딩하는 방식 
+
+태그1{내용1} + 태그2{내용2}
+예) 
+h1{큰제목}+h2{두번째제목}+h3{세번째제목} 
+[Ctrl]+[Space Bar] 
+
+// html 주석달기 
+ctrl+/ 
+<!-- 주석내용 -->
+화면에 표시되지 않지만 설명글 용도로 사용 
+
+// p 태그 
+paragraph 문단 생성 
+<p> 문단내용 </p>
+p{문단내용}
+
+p{행$입니다.}*3
+$는 자동숫자증감 
+ *숫자 : 반복 
+
+
+// br 태그 
+break line 
+단순줄바꿈. 문단내에서 줄바꿈시 이용  
+<br /> 또는 <br>
+
+// address 
+기울임꼴로 표시 
+<address> 주소내용 </address>
+
+// blockquote
+들여쓰기 인용문용도 
+<blockquote>
+ 글내용 
+</blockquote>
+
+// 글자와 관련된 태그
+인라인요소 
+b, strong : 진하게 
+em, i : 기울임 
+code : 코딩스타일 
+sup : 윗첨자 
+sub : 아채첨자 
+
+// 수평선  : 교재  p40
+내용을 분리하는 용도
+horizontal rule 
+단독태그 
+<hr>   
+<hr />
+
+// 하이퍼링크 a 
+anchor
+문서와 문서를 연결한다. 
+웹상의 주소를 연결한다. 
+인라인요소 
+텍스트 하이퍼링크 : 
+  파란색 / 보라색(방문링크) / 빨간색(활성링크) 밑줄로 표시 
+target="_blank" : 새탭으로 하이퍼링크 연결 
+title="보충설명" : 툴팁형태로 보충설명이 표시된다. 
+
+URL 
+ - 웹사이트 
+     http://사이트주소
+ - html 페이지 경로 
+
+<a href="URL" target="_blank" title="보충설명">
+글내용
+</a>
+  
+// 목록문단 
+목록문단의 종류 
+ - 순서없는 목록 문단, 블렛 목록문단 
+    Unoredered List , 목록앞에 disc 기호로 표시 
+    ul 태그안에 li 태그가 있는 구조 
+    ul>li{내용}
+
+ - 순서있는 목록 문단, 숫자목록문단
+    Oredered List , 목록앞에 자동으로 숫자가 표시 
+    ol 태그안에 li 태그가 있는 구조 
+    ol>li{내용}
+
+// 정의목록문단
+dl>dt+dd
+dl 태그안에 dt와 dd 태그가 있는 구조 
+definition list
+definition title
+definition data
+
+<dl>
+  <dt>제목</dt>
+  <dd>내용</dd>
+</dl>
+
+<dl>
+  <dt>제목</dt>
+  <dd>내용1</dd>
+  <dd>내용2</dd>
+  <dd>내용3</dd>
+</dl>
+
+<dl>
+  <dt>제목1</dt>
+  <dd>내용1</dd>
+  <dt>제목2</dt>
+  <dd>내용2</dd>
+</dl>
+
+// 테이블 : p56 참조 
+table 태그안에 tr태그, 
+ tr 태그안에 td, th 태그가 들어간 구조 
+
+ tr : 테이블의 행, table row
+ td : 테이블 데이타, table data
+ th : 테이블 제목, table head
+     : 글자는 중앙정렬, 진하게 표시 
+
+table>tr>td
+table>tr>th
+
+table 속성 
+  border=숫자 : 테두리표시 
+  cellpadding=숫자 : 셀안의 여백
+  cellspacing=숫자 : 셀과 셀사이 간격
+  width=숫자 : 가로크기 
+
+셀합치기 속성 
+  th, td안에 삽입 
+  - rowspan=숫자 : 세로셀 합치기 
+  - colspan=숫자 : 가로셀 합치기   
+
+ 규칙 : 
+   셀을 합치고나서는 합친 나머지셀은 
+    주석처리나 삭제한다. 
+
+셀배경색 지정은?
+   bgcolor='영문색상명이나 16진수색상값'
+
+영문색상명 참고 주소 :
+https://www.w3schools.com/colors/colors_names.asp
+
+// 이미지 삽입태그
+img : image
+- 단독태그 
+- 인라인요소 
+<img src='그림경로' alt='보충설명' width='가로크기' height='세로크기' >
+<img src='그림경로' alt='보충설명' width='가로크기' height='세로크기' />
+
+src : source , 이미지파일경로 지정 
+   - 로컬상의 이미지 
+   - 웹상의 이미지 주소 
+alt : alternate text
+
+smile.zip 다운로드받은 후 작업폴더에 압축해제하세요 
+smile 폴더안에 이미지가 저장되어 있어야함 
+
+
+// 이미지 하이퍼링크
+
+<a href="URL"> <img src="이미지경로"> </a>
+
+
+--------------------------
+// 폼(Form) 이란?
+
+사용예) 로그인, 게시판, 주문서, 회원가입, 예약...
+
+폼문서 -> 전송버튼 
+  -> form 태그의 action에서 지정된 작동파일(php, asp, jsp...) 
+  -> 데이타베이스, 프로그래밍처리 
+
+폼문서의 구성요소 
+ - form 
+ - 라벨
+ - 입력상자 ( 텍스트, 암호, 숨김) 
+-  여러줄글상자 
+- 체크박스, 라디오버튼
+- 옵션메뉴 
+- 파일선택상자 
+- 버튼 (전송, 취소, 일반) 
+- 필드셋 
+- 색상선택상자, 범위선택상자, 날짜선택상자 (HTML5 지원)
+
+특징
+- 폼문서는 form 태그안에 폼관련 구성요소를 삽입한다. 
+- label 이랑 텍스트필드, 텍스트애리어 등을 연결한다.
+- 인라인요소 
+
+// 라벨 
+ 폼요소의 표제역할 
+ <label for=폼요소아이디값>제목</lable>
+
+// 텍스트필드 
+ 글자를 입력받을 수 있는 글상자
+ 단독태그  
+ <input type='text' id='아이디값' value='초기값' />
+ <input type='text' id='아이디값' value='초기값' >
+
+Emmet 표기 : 
+input#아이디값[type=text]
+
+// 크롬웹브라우저의 개발자모드에서 미리보기 
+F12
+ctrl + shift + I 
+
+[Toggle Device Toolbar] - 다른 디바이스의 미리보기 모드 
+
+// 암호텍스트필드 
+입력값이 disc 모양으로 표시 
+비밀번호와 같은 데이터 입력시 사용 
+<input type='password' id='아이디값'  />
+<input type='text' id='아이디값'  >
+
+// 여러줄 글상자 
+여러줄을 입력하면 자동으로 스크롤바가 표시 
+<textarea cols=글자숫자 rows=행숫자 id=아이디값>초기글자</textarea>
+
+// 필드셋 
+  : 폼요소를 그룹화시킬때 사용 
+  <fieldset>
+    <legend>그룹제목</legend>
+    폼요소..
+  </fieldset>
+
+// 선택 
+- 다중선택 : 토글기능 
+    체크박스 
+- 단일선택 
+    라디오버튼, 옵션박스 
+
+// 라디오버튼 : 그룹안의 아이템에서 단일선택 
+   단독태그 
+   value는 실제 서버로 전송되는 데이타값 
+   checked 미리선택된 상태로 표시 
+   주의사항: 같은라디오그룹에서는 name 값이 같아야한다
+<input type='radio' name='라디오그룹이름' value='값' checked >
+<input type='radio' name='라디오그룹이름' value='값' checked />
+
+// 체크박스 : 그룹안의 아이템에서 다중 선택 
+단독태그 
+   value는 실제 서버로 전송되는 데이타값 
+   checked 미리선택된 상태로 표시 
+
+<input type='checkbox' name='그룹이름' value='값' checked >
+<input type='checkbox' name='그룹이름' value='값' checked />
+
+// 옵션박스 - 셀렉트메뉴, 단일선택, 드롭다운메뉴  
+<select name='그룹이름'>
+  <option value='데이타값'>목록1</option>
+  <option value='데이타값'>목록2</option>
+  <option value='데이타값'>목록3</option>
+   ....
+</select>
+
+// 파일선택상자 
+- 로컬컴퓨터, 디바이스 기기의 다른 파일을 선택할 수 있는 탐색기 표시 
+- 버튼이 함께 추가된다. 
+<input type='file'>
+<input type='file' />
+
+// 버튼 
+- 전송버튼 
+  : form 태그안의 action 값이랑 연결 
+   <input type='submit'>
+   <button>버튼제목</button>
+
+- 취소버튼 
+  : 폼 구성요소를 초기화 
+  <input type='reset'>
+
+// html5에 추가된 폼요소 
+
+<input type='time' >
+<input type='date' >
+<input type='color' value='초기색상16진수색상값'  >
+<input type='number' min=시작숫자 max=끝숫자 >
+검색어 
+<input type='search' >  
+이메일 주소 확인 
+<input type='email' >  
+주소 url  확인 
+<input type='url' >  
+
+-----------------------------
+무비 삽입 태그 
+
+- 유튜브 무비 소스 연결하기 
+- 로컬상의 mp4 무비 삽입하기 
+<video src="무비경로" width="가로크기" height="세로크기" 
+    preload='true' controls='true'>
+    무비설명글</video>
+
+// 아이프레임 
+name 속성값은 아이프레임이름으로 
+  하이퍼링크의 타겟(target) 속성속으로 지정가능 
+아이프레임에 하이퍼링크 페이지 표시 가능 
+
+<iframe src="아이프레임파일경로" 
+  frameborder="0" width='가로크기' height="세로크기"
+    name='아이프레임'>
+아이프레임 글 보충 설명글
+</iframe>
+
+
+// 이미지 하이퍼링크
+
+<a href="URL"> <img src="이미지경로"> </a>
+
+
+
+
+
+--------------------------
+// 폼(Form) 이란?
+
+사용예) 로그인, 게시판, 주문서, 회원가입, 예약...
+
+폼문서 -> 전송버튼 
+  -> form 태그의 action에서 지정된 작동파일(php, asp, jsp...) 
+  -> 데이타베이스, 프로그래밍처리 
+
+폼문서의 구성요소 
+ - form 
+ - 라벨
+ - 입력상자 ( 텍스트, 암호, 숨김) 
+-  여러줄글상자 
+- 체크박스, 라디오버튼
+- 옵션메뉴 
+- 파일선택상자 
+- 버튼 (전송, 취소, 일반) 
+- 필드셋 
+- 색상선택상자, 범위선택상자, 날짜선택상자 (HTML5 지원)
+
+특징
+- 폼문서는 form 태그안에 폼관련 구성요소를 삽입한다. 
+- label 이랑 텍스트필드, 텍스트애리어 등을 연결한다.
+- 인라인요소 
+
+// 라벨 
+ 폼요소의 표제역할 
+ <label for=폼요소아이디값>제목</lable>
+
+// 텍스트필드 
+ 글자를 입력받을 수 있는 글상자
+ 단독태그  
+ <input type='text' id='아이디값' value='초기값' />
+ <input type='text' id='아이디값' value='초기값' >
+
+Emmet 표기 : 
+input#아이디값[type=text]
+
+// 크롬웹브라우저의 개발자모드에서 미리보기 
+F12
+ctrl + shift + I 
+
+[Toggle Device Toolbar] - 다른 디바이스의 미리보기 모드 
+
+// 암호텍스트필드 
+입력값이 disc 모양으로 표시 
+비밀번호와 같은 데이터 입력시 사용 
+<input type='password' id='아이디값'  />
+<input type='text' id='아이디값'  >
+
+// 여러줄 글상자 
+여러줄을 입력하면 자동으로 스크롤바가 표시 
+<textarea cols=글자숫자 rows=행숫자 id=아이디값>초기글자</textarea>
+
+// 필드셋 
+  : 폼요소를 그룹화시킬때 사용 
+  <fieldset>
+    <legend>그룹제목</legend>
+    폼요소..
+  </fieldset>
+
+// 선택 
+- 다중선택 : 토글기능 
+    체크박스 
+- 단일선택 
+    라디오버튼, 옵션박스 
+
+// 라디오버튼 : 그룹안의 아이템에서 단일선택 
+   단독태그 
+   value는 실제 서버로 전송되는 데이타값 
+   checked 미리선택된 상태로 표시 
+   주의사항: 같은라디오그룹에서는 name 값이 같아야한다
+<input type='radio' name='라디오그룹이름' value='값' checked >
+<input type='radio' name='라디오그룹이름' value='값' checked />
+
+// 체크박스 : 그룹안의 아이템에서 다중 선택 
+단독태그 
+   value는 실제 서버로 전송되는 데이타값 
+   checked 미리선택된 상태로 표시 
+
+<input type='checkbox' name='그룹이름' value='값' checked >
+<input type='checkbox' name='그룹이름' value='값' checked />
+
+// 옵션박스 - 셀렉트메뉴, 단일선택, 드롭다운메뉴  
+<select name='그룹이름'>
+  <option value='데이타값'>목록1</option>
+  <option value='데이타값'>목록2</option>
+  <option value='데이타값'>목록3</option>
+   ....
+</select>
+
+// 파일선택상자 
+- 로컬컴퓨터, 디바이스 기기의 다른 파일을 선택할 수 있는 탐색기 표시 
+- 버튼이 함께 추가된다. 
+<input type='file'>
+<input type='file' />
+
+// 버튼 
+- 전송버튼 
+  : form 태그안의 action 값이랑 연결 
+   <input type='submit'>
+   <button>버튼제목</button>
+
+- 취소버튼 
+  : 폼 구성요소를 초기화 
+  <input type='reset'>
+
+// html5에 추가된 폼요소 
+
+<input type='time' >
+<input type='date' >
+<input type='color' value='초기색상16진수색상값'  >
+<input type='number' min=시작숫자 max=끝숫자 >
+검색어 
+<input type='search' >  
+이메일 주소 확인 
+<input type='email' >  
+주소 url  확인 
+<input type='url' >  
+
+-----------------------------
+무비 삽입 태그 
+
+- 유튜브 무비 소스 연결하기 
+- 로컬상의 mp4 무비 삽입하기 
+<video src="무비경로" width="가로크기" height="세로크기" 
+    preload='true' controls='true'>
+    무비설명글</video>
+
+// 아이프레임 
+name 속성값은 아이프레임이름으로 
+  하이퍼링크의 타겟(target) 속성속으로 지정가능 
+아이프레임에 하이퍼링크 페이지 표시 가능 
+
+<iframe src="아이프레임파일경로" 
+  frameborder="0" width='가로크기' height="세로크기"
+    name='아이프레임'>
+아이프레임 글 보충 설명글
+</iframe>
+
+
+
+// Reference Site 
+https://www.w3schools.com/
+
+// 동영상 
+생활코딩 
+  : https://www.opentutorials.org/course/1
+
+T아카데미
+https://tacademy.skplanet.com/live/player/listOnline.action
+
+서울wiz
+https://www.youtube.com/user/WizcenterSeoul/playlists
+
+
+
+
+

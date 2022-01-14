@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>폼 퀴즈</title>
+</head>
+<body>
+    <h1>폼 퀴즈</h1>
+    <hr>
+    <p><a href="#end">아래로 이동하기</a></p>
+    <p><a href="#gallery">갤러리 컨텐츠로 이동하기</a></p>
+    <hr>
+    <h2>폼1</h2>
+    <form action="">
+        <!-- table[border=1 align=center cellpadding=10 cellspacing=0]>
+            (tr>td*4)*5 -->
+        <table border="1" align="center" cellpadding="10" cellspacing="0">
+            <tr>
+                <td>인증방식</td>
+                <td colspan="3">
+                    <label for="t1">휴대폰번호</label>
+                    <input type="radio" name="r1" id="t1" checked>
+                    <label for="t2">이메일</label>
+                    <input type="radio" name="r1" id="t2">
+                </td>
+                <!-- <td></td>
+                <td></td> -->
+            </tr>
+            <tr>
+                <td>휴대폰 번호</td>
+                <td colspan="3">
+                    <select name="" id="">
+                        <option value="">010</option>
+                        <option value="">011</option>
+                        <option value="">017</option>
+                        <option value="">019</option>
+                    </select>
+                    <strong>-</strong>
+                    <input type="text" size="4">
+                    <strong>-</strong>
+                    <input type="text" size="4">
+                    <button>인증번호요청</button>
+                </td>
+                <!-- <td></td>
+                <td></td> -->
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    </form>
+    <hr>
+    <h2>수강신청서</h2>
+    <form action="">
+        <p>
+            <label for="addr">주소</label>
+            <!-- <input type="text" size="40" id="addr" value="전주시"> -->
+            <input type="text" size="40" id="addr" 
+                placeholder="배달 주소 입력" > 
+        </p>
+        <p>
+            <label for="contents">기타문의사항</label>
+            <textarea name="" id="contents" cols="30" rows="10">궁금한점을 입력하여주시면빠른시일내에 연락드리겠습니다.</textarea>
+        </p>
+    </form>
+    <hr>
+    <h2>유튜비 무비 삽입</h2>
+    <!-- div => division  -->
+    <div align="center">
+        <iframe width="320" height="240" 
+        src="https://www.youtube.com/embed/P3ln1nmbf3o" 
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+        </iframe>
+    </div>
+    <hr>
+    <h2>아이프레임</h2>
+    <!-- ul>(li>a)*3 -->
+    <!-- target값은 아이프레임 태그의 name값 -->
+    <ul>
+        <li><a href="red.html" target="box">red</a></li>
+        <li><a href="blue.html" target="box">blue</a></li>
+        <li><a href="green.html" target="box">green</a></li>
+    </ul>
+    <iframe src="red.html" frameborder="1" 
+        width="400" height="400" name="box">
+    </iframe>
+    <hr>
+    <h2 id="gallery">아이프레임을 이용한 갤러리1</h2>
+    <!-- ul>(li>a{그림$})*3 -->
+    <ul>
+        <li><a href="smile/ah.png" target="picture">그림1</a></li>
+        <li><a href="smile/sweat.png" target="picture">그림2</a></li>
+        <li><a href="smile/tire.png" target="picture">그림3</a></li>
+    </ul>
+    <div>
+        <iframe src="smile/ah.png" frameborder="0" 
+            width="130" height="130" name="picture">
+        </iframe>
+    </div>
+    <hr>
+    <h2>이미지 하이퍼링크</h2>
+    <!-- p>a>img -->
+    <p>
+        <a href="http://www.ohmynews.com/" target="_blank">
+            <img src="https://ssl.pstatic.net/static/newsstand/up/2013/0813/nsd114542158.gif" alt="오마이뉴스">
+        </a>
+   </p>
+   <h2>아이프레임을 이용한 갤러리2</h2>
+   <!-- div[align=center]>(a>img)*3 -->
+   <div align="center">
+       <a href="smile/ah.png" target="picture2"><img src="smile/ah.png" alt="ah" width="50" height="50"></a>
+       <a href="smile/sweat.png" target="picture2"><img src="smile/sweat.png" alt="sweat" width="50" height="50"></a>
+       <a href="smile/tire.png" target="picture2"><img src="smile/tire.png" alt="tire" width="50" height="50"></a>
+    </div>
+    <div align="center">
+        <iframe src="smile/ah.png" frameborder="0" 
+            width="130" height="130" name="picture2">
+        </iframe>
+    </div>
+    <hr>
+    <!-- 문서 하단에 위치값 지정 -->
+    <p id="end"> <a href="#">맨위로 이동하기</a> </p>
+
+</body>
+</html>
